@@ -1,0 +1,97 @@
+.container.gallery-container {
+    min-height: inherit;
+    max-width: 185vh;
+}
+
+/* Override bootstrap column paddings */
+.gallery .row > div {
+    padding: 5px;
+}
+
+.gallery {
+    margin: 0 -5px;
+    
+}
+
+.gallery .lightbox {  
+    position: relative;
+    display: block;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#s2{
+    min-height: inherit;
+}
+
+#s2 p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.4;
+    color: #FFD000;
+    font-weight: 600;
+}
+.gallery .lightbox img {
+    width: 100%;
+    padding: 1px;
+    border-radius: 2px;
+    position: relative;
+    transition: 1s;
+    transform: scale(1);
+}
+
+.gallery .lightbox:hover img {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.gallery .caption {
+    background-color: rgba(20, 20, 20, 0.75);
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+.gallery .caption * {
+    flex-basis:100%;
+}
+
+.gallery .caption h4 {
+    display: none;
+}
+
+.gallery .caption p {
+    margin:0;
+    padding:0;
+}
+
+.gallery .lightbox:hover .caption {
+    opacity: 0.9;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media screen and (max-width: 767px) {
+    .container gallery-container {
+        
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+}

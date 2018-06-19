@@ -1,0 +1,117 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.4s;
+}
+
+
+
+/* Зміни CSS коду розпочинати звідси */
+
+header .row {
+    min-height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 50px 0;
+    /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+header,
+#s4 {
+    background-color: #999;
+}
+
+#s1 {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#s2 {
+    background-image: url("../img/gallery-background.png");
+
+
+}
+
+#s1,
+#s3 {
+    background-color: #FFD000;
+}
+
+#s3 h3 {
+    font-size: 67px;
+    line-height: 1.4;
+    color: #000;
+}
+
+#s3 p {
+    font-size: 20px;
+    line-height: 1.35;
+    color: #000;
+}
+
+#s1 h4 {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+#s4 {
+    background-image: url("../img/contacts-background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.white {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+
+/**************************************/
+
+/* Зміна властивостей для breakpoints */
+
+/**************************************/
+
+@media screen and (max-width:767px) {
+    #s1 .container {
+        text-align: center !important;
+
+    }
+}
+
+
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+    section {
+        padding: 25px 0;
+    }
+    #s1 h4 {
+        font-size: 18px;
+    }
+}

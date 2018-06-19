@@ -1,0 +1,61 @@
+.container .contacts-container {
+    min-height: 100vh;
+}
+
+#s4 {
+    min-height: inherit;
+    padding: 70px 0;
+}
+
+#s4 .row {
+    min-height: inherit;
+}
+
+#contacts {
+    margin: 20px;
+}
+
+.form-group {
+    /*   min-height: 60px;
+    max-width: 35rem; */
+    margin: 0.4rem;
+
+}
+
+.form-control {
+    min-height: 8vh;
+    padding: none;
+    margin: none;
+}
+
+#s4 h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+#botom {
+    align-items: center;
+
+}
+
+#mycontacts img {
+    max-width: 60px;
+    display: inline-block;
+}
+
+#mycontacts .row > div {
+    text-align: center;
+}
+
+
+
+footer #mycontacts {
+    background-color: #000;
+    padding-bottom: 14px;
+    padding-top: 10px;
+
+}

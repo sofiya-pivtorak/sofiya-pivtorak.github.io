@@ -1,0 +1,122 @@
+
+#mainNav {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    padding: 5px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.1s;
+    background: rgb(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+#mainNav.navbar-shrink {
+    margin-top: 0;
+    background: rgb(0, 0, 0, 0.90);
+    padding: 8px;
+    font-size: 28px;
+    transition: all 0.1s;
+}
+
+
+/* Властивості "гамбургер-меню" */
+
+#mainNav .navbar-toggler {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.fa-bars:before {
+    color: #fc0;
+    font-size: 1.6rem;
+}
+
+/* Кінець властивостей "гамбургер-меню" */
+
+/* Властивості лінків меню */
+
+#mainNav .nav-link {
+    background: transparent;
+    border-radius: .25rem;
+    color: #fc0;
+    margin-left: 1rem;
+    padding: .1rem .1rem .5rem;
+    margin: .4rem 2.4rem 0rem;
+    text-align: left;
+}
+
+#mainNav .nav-link:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+#mainNav .nav-link.active {
+    color: #fc0;
+}
+
+/* Кінець властивостей лінків меню */
+
+/* Зміна вигляду навігаційної панелі для екранів менше 767px */
+
+/* працює у парі з додатковим класом для .navbar */
+
+/* .navbar-expand-md. УВАГА! При зміні на клас .navbar-expand-sm */
+
+/* або .navbar-expand-lg необхідно змінити точку breakpoints на  */
+
+/* 565px або 991px відповідно до обраного класу  */
+
+@media screen and (max-width: 767px) {
+
+    /* Зміна властивостей усіх контейнерів всередині #page-top */
+    #page-top .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Зміна властивостей контейнера всередині */
+    /* навігаційної панелі #mainNav */
+    #mainNav .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Зміна властивостей лінків меню */
+    #mainNav .navbar-nav {
+        background-color: #444;
+
+        /* Загальний колір фон під усіма лінками */
+        font-size: 1.2rem;
+        font-weight: 600;
+
+    }
+
+    #mainNav .nav-link {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #mainNav .nav-link {
+        padding: .5rem 1.5rem;
+        border-top: 1px solid #666;
+    }
+
+    #mainNav .nav-link,
+    #mainNav .nav-link.active,
+    #mainNav.navbar-shrink .nav-link:hover {
+        background: transparent;
+    }
+    /* Кінець змінам властивостей лінків меню */
+    /* Зміна властивостей "гамбургер-меню" */
+    #mainNav .navbar-toggler {
+        margin-right: 15px;
+    }
+
+    /* Зміна властивостей Лого */
+    #mainNav .navbar-brand {
+        margin-left: 15px;
+    }
+}
